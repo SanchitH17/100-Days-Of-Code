@@ -5,7 +5,7 @@ public class Bill {
            float pencil = sc.nextFloat();
            float book = sc.nextFloat();
            float rubber = sc.nextFloat();
-           float total = rubber+book+pencil;
+           float total = rubber+book+pencil ;
            System.out.println("TOTAL BILL IS ₹ "+total);
     }
 }
