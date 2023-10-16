@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1 style="text-align: center; color: red;">COLOR CHANGING WEBPAGE</h1>
+   
+</body>
+</html>
+<script>
+     let arr = ["red" ,  " blue", "green" , "yellow" , "pink","orange"];
+       const body = document.getElementById("body") 
+        let currentindex = 0;
+ function colorchange(){
+    body.style.backgroundColor=arr[currentindex];
+    currentindex = (currentindex+1)  % arr.length;
+ }
+ setInterval(colorchange, 1000);
+</script>
